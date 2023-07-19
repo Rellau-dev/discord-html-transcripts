@@ -74,7 +74,7 @@ export default async function renderMessages({ messages, channel, callbacks, ...
           ? `Category Channel`
           : 'topic' in channel && channel.topic
           ? await renderContent(channel.topic, { messages, channel, callbacks, type: RenderType.REPLY, ...options })
-          : `This is the start of #${channel.name} channel.`}
+          : `Это начало канала #${channel.name}.`}
       </DiscordHeader>
 
       {/* body */}
